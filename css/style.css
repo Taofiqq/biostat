@@ -163,7 +163,7 @@ img {
   padding: 9rem;
 }
 .nav__link {
-  font-size: var(--h2-font-size);
+  font-size: var(--normal-font-size);
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   color: var(--white-color);
