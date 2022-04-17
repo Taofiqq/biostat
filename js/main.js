@@ -104,3 +104,8 @@ let swiperTestimonial = new Swiper(".testimonial__container ", {
     },
   },
 });
+
+const displayText = () => {
+  const text = document.getElementById("hide");
+  text.style.display = "block";
+};

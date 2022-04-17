@@ -264,6 +264,8 @@ img {
   padding: 1rem 2rem;
   border-radius: 3px;
   transition: 0.3s;
+  border: none;
+  outline: none;
 }
 
 .button:hover {
@@ -308,6 +310,9 @@ img {
   /* text-align: justify; */
 }
 
+.hide {
+  display: none;
+}
 .about__title {
   text-align: initial;
   margin-bottom: 2rem;
