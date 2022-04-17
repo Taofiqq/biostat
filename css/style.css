@@ -305,6 +305,7 @@ img {
 
 .about__card-description {
   font-size: 0.8rem;
+  text-align: justify;
 }
 
 .about__title {
