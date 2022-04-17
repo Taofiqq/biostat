@@ -401,3 +401,30 @@ img {
 .active-link {
   color: #ecdbba;
 }
+
+/* section */
+.services__container {
+  row-gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.services__content {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.services__img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.services__title {
+  color: #ecdbba;
+  margin-bottom: 0.5rem;
+}
+
+.services__description {
+  font-size: 0.8rem;
+  padding: 0 1.5rem;
+}
