@@ -93,17 +93,9 @@ img {
 
 .main {
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
 }
 
-.main p {
-  font-size: var(--h1-font-size);
-}
-img {
+.logo {
   width: 50px;
 }
 
@@ -144,7 +136,6 @@ img {
 @media screen and (max-width: 767px) {
   .nav__menu {
     position: fixed;
-    /* background-color: #222831; */
     background-color: var(--body-color);
     top: 0;
     right: -100%;
@@ -169,6 +160,7 @@ img {
   color: var(--white-color);
   text-decoration: none;
   transition: 0.3s;
+  font-size: 0.6rem;
 }
 
 .nav__link:hover {
@@ -187,4 +179,133 @@ img {
 /* show mwnu */
 .show {
   right: 0;
+}
+
+/* Home */
+
+.home {
+  position: relative;
+  overflow: hidden;
+}
+
+.home__container {
+  position: relative;
+  padding-top: 4rem;
+  row-gap: 3rem;
+}
+
+.home__data {
+  text-align: center;
+}
+.home__title {
+  font-size: var(--h1-font-size);
+  margin-bottom: 1rem;
+}
+
+.home__subtitle {
+  font-size: var(--h2-font-size);
+  margin-bottom: 0.25rem;
+}
+.home__img {
+  width: 280px;
+  justify-self: center;
+}
+
+.home__button {
+  position: relative;
+  border: 2px solid #ecdbba;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.home__button::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border: 1px solid #ecdbba;
+  border-radius: 50%;
+  box-shadow: 0 0 12px #ecdbba;
+  transition: 0.3s;
+  animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* button */
+
+.button {
+  display: inline-block;
+  background-color: #eeeeee;
+  color: #000000;
+  padding: 1rem 2rem;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: #334756;
+  color: #fff;
+}
+
+/* about */
+
+.about__container {
+  row-gap: 6rem;
+}
+
+.about__group {
+  position: relative;
+}
+
+.about__image {
+  width: 310px;
+  border-radius: 0.5rem;
+}
+
+.about__card {
+  width: 180px;
+  position: absolute;
+  right: 0;
+  bottom: -2.5rem;
+  /* background-color: hsla(0, 0%, 100%, 0.1); */
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(16px);
+  padding: 1rem 0.75rem;
+  text-align: center;
+  border-radius: 1.25rem;
+}
+
+.about__card-title {
+  font-size: 0.9rem;
+}
+
+.about__card-description {
+  font-size: 0.8rem;
+}
+
+.about__title {
+  text-align: initial;
+  margin-bottom: 2rem;
+}
+
+.about__description {
+  margin-bottom: 2rem;
 }
