@@ -109,3 +109,25 @@ const displayText = () => {
   const text = document.getElementById("hide");
   text.style.display = "block";
 };
+
+// scroll reveal
+
+const sr = ScrollReveal({
+  origin: "top",
+  distance: "60px",
+  duration: 2500,
+  delat: 400,
+  // reset: true
+});
+
+sr.reveal(".home__title");
+sr.reveal(".home__subtitle", { delay: 500 });
+sr.reveal(".home__img", { delay: 800 });
+sr.reveal(".home__button", { delay: 1000, interval: 200, origin: "bottom" });
+sr.reveal(".about__group", { origin: "left" });
+sr.reveal(".about__data", { origin: "right" });
+sr.reveal(".section__title", { origin: "right" });
+sr.reveal(".services__content", { origin: "left" });
+// sr.reveal(".testimonial__content", { origin: "left" });
+sr.reveal(".footer__content", { origin: "right" });
+sr.reveal(".footer__copy", { origin: "bottom" });
