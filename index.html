@@ -13,6 +13,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css" />
 
+    <!-- Swiper css -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <title>Biostat Stars</title>
   </head>
   <body>
@@ -148,11 +150,11 @@
       <section class="testimonials section" id="testimonials">
         <h1 class="section__title">Testimonials</h1>
 
-        <div class="testimonial__container container">
-          <div>
+        <div class="testimonial__container container swiper-container">
+          <div class="swiper-wrapper">
             <!-- testimonial 1 -->
 
-            <div class="testimonial__content">
+            <div class="testimonial__content swiper-slide">
               <div class="testimonial__data">
                 <div class="testimonial__header">
                   <img
@@ -176,7 +178,7 @@
             <!-- end of testimonial 1 -->
 
             <!-- testimonial 2  -->
-            <div class="testimonial__content">
+            <div class="testimonial__content swiper-slide">
               <div class="testimonial__data">
                 <div class="testimonial__header">
                   <img
@@ -199,7 +201,7 @@
             <!-- end of testimonial 2 -->
 
             <!-- testimonial 3 -->
-            <div class="testimonial__content">
+            <div class="testimonial__content swiper-slide">
               <div class="testimonial__data">
                 <div class="testimonial__header">
                   <img
@@ -222,6 +224,8 @@
             </div>
             <!-- end of testimonial 3 -->
           </div>
+
+          <div class="swiper-pagination swiper-pagination-testimonial"></div>
         </div>
       </section>
       <!-- end of testimonials -->
@@ -275,6 +279,8 @@
       <i class="ri-arrow-up-line"></i>
     </a>
 
+    <!-- swiper js -->
+    <script src="./js/swiper-bundle.min.js"></script>
     <!-- Main JS-->
     <script src="./js/main.js"></script>
   </body>

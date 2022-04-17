@@ -431,3 +431,39 @@ img {
 }
 
 /* testimonial */
+
+.testimonial__data,
+.testimonial__header {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial__data {
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.testimonial__image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 0.75rem;
+}
+
+.testimonial__name {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.testimonial__client {
+  font-size: 0.8rem;
+  color: #ecdbba;
+}
+
+.testimonial__description {
+  margin-bottom: 1rem;
+}
+
+.swiper-container .swiper-pagination-testimonial {
+  bottom: 0;
+}
