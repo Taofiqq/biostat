@@ -101,6 +101,12 @@ img {
   margin-bottom: 2.5rem;
   text-align: center;
 }
+.section__subtitle {
+  font-size: 1rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  color: #ecdbba;
+}
 
 .main {
   overflow: hidden;
