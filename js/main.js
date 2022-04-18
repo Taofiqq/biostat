@@ -105,12 +105,16 @@ let swiperTestimonial = new Swiper(".testimonial__container ", {
   },
 });
 
+const b = document.getElementById("toggle-btn");
+b.innerText = "Know More";
 const displayText = () => {
   const x = document.getElementById("hide");
   if (x.style.display === "none") {
     x.style.display = "block";
+    b.innerText = "Know Less";
   } else {
     x.style.display = "none";
+    b.innerText = "Know More";
   }
 };
 
