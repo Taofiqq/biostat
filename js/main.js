@@ -106,8 +106,12 @@ let swiperTestimonial = new Swiper(".testimonial__container ", {
 });
 
 const displayText = () => {
-  const text = document.getElementById("hide");
-  text.style.display = "block";
+  const x = document.getElementById("hide");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
 };
 
 // scroll reveal
