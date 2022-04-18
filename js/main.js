@@ -127,7 +127,7 @@ sr.reveal(".home__button", { delay: 1000, interval: 200, origin: "bottom" });
 sr.reveal(".about__group", { origin: "left" });
 sr.reveal(".about__data", { origin: "right" });
 sr.reveal(".section__title", { origin: "right" });
-// sr.reveal(".services__content", { origin: "left" });
+sr.reveal(".services__content", { origin: "right" });
 // sr.reveal(".testimonial__content", { origin: "left" });
 sr.reveal(".footer__content", { origin: "right" });
 sr.reveal(".footer__copy", { origin: "bottom" });

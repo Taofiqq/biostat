@@ -499,7 +499,7 @@ img {
 /* breakpoints */
 
 @media screen and (max-width: 320px) {
-  container {
+  .container {
     margin-left: 1rem;
     margin-right: 1rem;
   }
@@ -515,6 +515,13 @@ img {
   .about__group {
     width: 350px;
     justify-self: center;
+  }
+
+  .about__data {
+    margin: 0 3rem;
+  }
+  .about__description {
+    font-size: 0.8rem;
   }
 }
 @media screen and (min-width: 767px) {
