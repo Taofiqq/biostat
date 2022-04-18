@@ -325,6 +325,10 @@ img {
 .hide {
   display: none;
 }
+
+/* .about__data {
+  margin: 0 2rem;
+} */
 .about__title {
   text-align: initial;
   margin-bottom: 2rem;
@@ -332,9 +336,9 @@ img {
 
 .about__description {
   margin-bottom: 2rem;
-  text-align: justify;
+  /* text-align: justify; */
   line-height: 1.5rem;
-  font-size: 1.1rem;
+  font-size: 0.8rem;
 }
 
 /* footer */
@@ -507,6 +511,14 @@ img {
   .about__card {
     width: 150px;
   }
+  /* .about__data {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  } */
+
+  .about__description {
+    font-size: 0.7rem;
+  }
 }
 
 /* medium devices */
@@ -515,13 +527,6 @@ img {
   .about__group {
     width: 350px;
     justify-self: center;
-  }
-
-  .about__data {
-    margin: 0 3rem;
-  }
-  .about__description {
-    font-size: 0.8rem;
   }
 }
 @media screen and (min-width: 767px) {
