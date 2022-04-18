@@ -573,11 +573,17 @@ img {
   .about__card {
     width: 198px;
     padding: 1rem 1.25rem;
+    right: -4rem;
+    bottom: -1rem;
   }
 
   .about__description {
     padding-right: 4rem;
     margin-bottom: 3rem;
+  }
+
+  .services__description {
+    font-size: 1.2rem;
   }
 
   .footer__container {
