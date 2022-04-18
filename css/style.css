@@ -561,6 +561,8 @@ img {
 
   .home__img {
     width: 380px;
+    height: 300px;
+    object-fit: cover;
   }
 
   .about__container {
