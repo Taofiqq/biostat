@@ -338,7 +338,7 @@ img {
   margin-bottom: 2rem;
   /* text-align: justify; */
   line-height: 1.5rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 /* footer */
@@ -516,9 +516,9 @@ img {
     margin-right: 2rem;
   } */
 
-  .about__description {
+  /* .about__description {
     font-size: 0.7rem;
-  }
+  } */
 }
 
 /* medium devices */
