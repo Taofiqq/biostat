@@ -227,6 +227,7 @@ img {
 .home__img {
   width: 280px;
   justify-self: center;
+  border-radius: 0.5rem;
 }
 
 .home__button {
@@ -449,6 +450,7 @@ img {
   height: 100px;
   margin-bottom: 1rem;
   object-fit: cover;
+  border-radius: 0.5rem;
 }
 
 .services__title {
