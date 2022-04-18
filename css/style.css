@@ -328,6 +328,7 @@ img {
   margin-bottom: 2rem;
   text-align: justify;
   line-height: 1.5rem;
+  font-size: 1.1rem;
 }
 
 /* footer */
@@ -446,7 +447,7 @@ img {
 }
 
 .services__description {
-  font-size: 0.8rem;
+  font-size: 1rem;
   padding: 0 1.5rem;
 }
 
@@ -482,6 +483,7 @@ img {
 
 .testimonial__description {
   margin-bottom: 1rem;
+  font-size: 1.1rem;
 }
 
 .swiper-container .swiper-pagination-testimonial {
