@@ -583,13 +583,20 @@ img {
     padding-right: 4rem;
     margin-bottom: 3rem;
   }
-
+  .services__title {
+    font-size: 1.2rem;
+  }
   .services__description {
+    font-size: 0.9rem;
+  }
+
+  .testimonial__name,
+  .testimonial__client {
     font-size: 1.2rem;
   }
 
   .testimonial__description {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
   }
 
   .footer__container {
