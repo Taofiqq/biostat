@@ -588,6 +588,10 @@ img {
     font-size: 1.4rem;
   }
 
+  .testimonial__description {
+    font-size: 1.5rem;
+  }
+
   .footer__container {
     display: grid;
     grid-template-columns: repeat(4, max-content);
