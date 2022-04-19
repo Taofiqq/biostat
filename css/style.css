@@ -45,7 +45,7 @@
 
 /* variables Dark Theme */
 
-body.dark-theme {
+body.light-theme {
   --body-color: #fffdf5;
   --text-color: #000000;
   --sub-textcolor: #b55400;
@@ -83,6 +83,7 @@ body {
   font-size: var(--normal-font-size);
   color: var(--white-color);
   background-color: var(--body-color);
+  transition: all 1s;
 }
 h1,
 h2,
@@ -312,6 +313,7 @@ img {
   transition: 0.3s;
   border: none;
   outline: none;
+  font-family: "Work Sans", cursive;
 }
 
 .button:hover {
@@ -684,7 +686,7 @@ img {
   .change-theme {
     position: absolute;
     right: 20rem;
-    top: 1.7rem;
+    top: 1.8rem;
     cursor: pointer;
     font-size: 1.25rem;
     color: var(--text-color);

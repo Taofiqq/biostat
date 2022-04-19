@@ -144,10 +144,14 @@ sr.reveal(".footer__copy", { origin: "bottom" });
 // daerk and light theme
 
 const themeButton = document.getElementById("theme-button");
-const darktheme = "dark-theme";
-const iconTheme = "ri-sun-line";
+const lighttheme = "light-theme";
+const iconTheme = "ri-twitter-fill";
 
 themeButton.addEventListener("click", () => {
-  document.body.classList.toggle(darktheme);
+  document.body.classList.toggle(lighttheme);
   themeButton.classList.toggle(iconTheme);
 });
+
+{
+  /* <i class='bx ' ></i> */
+}
