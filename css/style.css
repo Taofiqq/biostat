@@ -11,13 +11,15 @@
   --header-height: 3.5rem;
 
   /* colors */
-  --body-color: #fffdf5;
-  --text-color: #000000;
-  --sub-textcolor: #b55400;
-  --social-color: #000000;
+
+  /* light */
+  --body-color: #071c21;
+  --text-color: white;
+  --sub-textcolor: #ecdbba;
+  --social-color: #fff;
   --about-color: #fff;
-  --button-color: #000000;
-  --header-color: #fffdf5;
+  --button-color: #fff;
+  --header-color: #071c21;
 
   /* fonts and typography */
   --body-font: "Work Sans", cursive;
@@ -44,13 +46,13 @@
 /* variables Dark Theme */
 
 body.dark-theme {
-  --body-color: #071c21;
-  --text-color: white;
-  --sub-textcolor: #ecdbba;
-  --social-color: #fff;
+  --body-color: #fffdf5;
+  --text-color: #000000;
+  --sub-textcolor: #b55400;
+  --social-color: #000000;
   --about-color: #fff;
-  --button-color: #fff;
-  --header-color: #071c21;
+  --button-color: #000000;
+  --header-color: #fffdf5;
   transition: all 1s;
 }
 /* Button Dark/Light */
