@@ -43,10 +43,10 @@ navLink.forEach((link) => {
 // window.addEventListener("scroll", scrollHeader);
 
 const scrollHeader = () => {
-  const header = document.getElementById("header");
+  const nav = document.getElementById("header");
   // When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
-  if (window.scrollY >= 50) header.classList.add("scroll");
-  else header.classList.remove("scroll");
+  if (window.scrollY >= 200) nav.classList.add("scroll-header");
+  else header.classList.remove("scroll-header");
 };
 
 window.addEventListener("scroll", scrollHeader);
@@ -136,6 +136,18 @@ sr.reveal(".about__group", { origin: "left" });
 sr.reveal(".about__data", { origin: "right" });
 sr.reveal(".section__title", { origin: "right" });
 sr.reveal(".services__content", { origin: "right" });
-// sr.reveal(".testimonial__content", { origin: "left" });
+sr.reveal(".section__subtitle", { origin: "right" });
+sr.reveal(".testimonial__container", { origin: "left" });
 sr.reveal(".footer__content", { origin: "right" });
 sr.reveal(".footer__copy", { origin: "bottom" });
+
+// daerk and light theme
+
+const themeButton = document.getElementById("theme-button");
+const darktheme = "dark-theme";
+const iconTheme = "ri-sun-line";
+
+themeButton.addEventListener("click", () => {
+  document.body.classList.toggle(darktheme);
+  themeButton.classList.toggle(iconTheme);
+});

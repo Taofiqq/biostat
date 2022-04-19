@@ -11,9 +11,13 @@
   --header-height: 3.5rem;
 
   /* colors */
-  --white-color: #fff;
-  --body-color: #071c21;
-  /* --body-color: #fffdf5; */
+  --body-color: #fffdf5;
+  --text-color: #000000;
+  --sub-textcolor: #b55400;
+  --social-color: #000000;
+  --about-color: #fff;
+  --button-color: #000000;
+  --header-color: #fffdf5;
 
   /* fonts and typography */
   --body-font: "Work Sans", cursive;
@@ -35,6 +39,29 @@
     --small-font-size: 0.875rem;
     --smaller-font-size: 0.813rem;
   }
+}
+
+/* variables Dark Theme */
+
+body.dark-theme {
+  --body-color: #071c21;
+  --text-color: white;
+  --sub-textcolor: #ecdbba;
+  --social-color: #fff;
+  --about-color: #fff;
+  --button-color: #fff;
+  --header-color: #071c21;
+  transition: all 1s;
+}
+/* Button Dark/Light */
+
+.change-theme {
+  position: absolute;
+  right: 4rem;
+  top: 9rem;
+  cursor: pointer;
+  font-size: 1.25rem;
+  color: var(--text-color);
 }
 
 /* Base */
@@ -78,8 +105,9 @@ img {
 
 /* change header bg */
 
-.scroll {
-  background-color: lavender;
+.scroll-header {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  background-color: var(--sub-textcolor);
 }
 /* Reusuable CSS Classes */
 .container {
@@ -100,12 +128,13 @@ img {
   font-size: var(--h1-font-size);
   margin-bottom: 2.5rem;
   text-align: center;
+  color: var(--text-color);
 }
 .section__subtitle {
   font-size: 1rem;
   margin-bottom: 2.5rem;
   text-align: center;
-  color: #ecdbba;
+  color: var(--sub-textcolor);
 }
 
 .main {
@@ -119,7 +148,8 @@ img {
 /* Header navigation */
 .header {
   width: 100%;
-  background-color: black;
+  /* background-color: transparent; */
+  background-color: var(--header-color);
   position: fixed;
   top: 0;
   left: 0;
@@ -136,7 +166,7 @@ img {
 .nav__logo,
 .nav__toggle {
   display: inline-flex;
-  color: var(--white-color);
+  color: var(--text-color);
 }
 
 .nav-logo {
@@ -174,10 +204,10 @@ img {
   font-size: var(--normal-font-size);
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  color: var(--white-color);
+  color: var(--text-color);
   text-decoration: none;
   transition: 0.3s;
-  font-size: 0.6rem;
+  font-size: 1rem;
 }
 
 .nav__link:hover {
@@ -189,7 +219,7 @@ img {
   position: absolute;
   top: 1rem;
   right: 1rem;
-  color: var(--white-color);
+  color: var(--text-color);
   cursor: pointer;
 }
 
@@ -217,12 +247,13 @@ img {
 .home__title {
   font-size: var(--h1-font-size);
   margin-bottom: 1rem;
-  color: white;
+  color: var(--text-color);
 }
 
 .home__subtitle {
   font-size: var(--h2-font-size);
   margin-bottom: 0.25rem;
+  color: var(--text-color);
 }
 .home__img {
   width: 280px;
@@ -240,7 +271,7 @@ img {
   justify-content: center;
   align-items: center;
   justify-self: center;
-  color: #fff;
+  color: var(--text-color);
   text-transform: uppercase;
 }
 
@@ -272,8 +303,8 @@ img {
 
 .button {
   display: inline-block;
-  background-color: #eeeeee;
-  color: #000000;
+  background-color: #b55400;
+  color: var(--button-color);
   padding: 1rem 2rem;
   border-radius: 3px;
   transition: 0.3s;
@@ -316,10 +347,12 @@ img {
 
 .about__card-title {
   font-size: 0.9rem;
+  color: var(--about-color);
 }
 
 .about__card-description {
   font-size: 0.8rem;
+  color: var(--about-color);
   /* text-align: justify; */
 }
 
@@ -333,11 +366,12 @@ img {
 .about__title {
   text-align: initial;
   margin-bottom: 2rem;
+  color: var(--sub-textcolor);
 }
 
 .about__description {
   margin-bottom: 2rem;
-  /* text-align: justify; */
+  color: var(--text-color);
   line-height: 1.5rem;
   font-size: 1.1rem;
 }
@@ -359,7 +393,7 @@ img {
   display: inline-flex;
   align-items: center;
   column-gap: 0.25rem;
-  color: #ecdbba;
+  color: var(--sub-textcolor);
   font-size: 1.5rem;
   transition: 0.3s;
   margin-bottom: 0.9rem;
@@ -369,20 +403,20 @@ img {
   color: #ecdbba;
 }
 
-/* .footer__description {
-  font-size: 0.8rem;
-  text-align: justify;
-  margin-top: 2rem;
-} */
+.footer__description {
+  margin-top: 1rem;
+  color: var(--text-color);
+}
 
 .footer__title {
   font-size: 1rem;
   margin-bottom: 0.5rem;
+  color: var(--sub-textcolor);
 }
 
 .footer__social-link {
   font-size: 1.25rem;
-  color: #fff;
+  color: var(--social-color);
   transition: 0.3s;
 }
 
@@ -395,6 +429,7 @@ img {
   display: block;
   text-align: center;
   margin-top: 3rem;
+  color: var(--text-color);
 }
 
 ::-webkit-scrollbar {
@@ -432,7 +467,7 @@ img {
 }
 
 .active-link {
-  color: #ecdbba;
+  color: var(--sub-textcolor);
 }
 
 /* section */
@@ -454,13 +489,14 @@ img {
 }
 
 .services__title {
-  color: #ecdbba;
+  color: var(--sub-textcolor);
   margin-bottom: 0.5rem;
 }
 
 .services__description {
   font-size: 1rem;
   padding: 0 1.5rem;
+  color: var(--text-color);
 }
 
 /* testimonial */
@@ -486,16 +522,18 @@ img {
 .testimonial__name {
   font-size: 1rem;
   font-weight: bold;
+  color: var(--text-color);
 }
 
 .testimonial__client {
   font-size: 0.8rem;
-  color: #ecdbba;
+  color: var(--sub-textcolor);
 }
 
 .testimonial__description {
   margin-bottom: 1rem;
   font-size: 1.1rem;
+  color: var(--text-color);
 }
 
 .swiper-container .swiper-pagination-testimonial {
@@ -636,5 +674,17 @@ img {
     grid-template-columns: repeat(4, max-content);
     place-items: center;
     justify-content: space-between;
+  }
+
+  /* .footer__description {
+    display: none;
+  } */
+  .change-theme {
+    position: absolute;
+    right: 20rem;
+    top: 1.7rem;
+    cursor: pointer;
+    font-size: 1.25rem;
+    color: var(--text-color);
   }
 }
