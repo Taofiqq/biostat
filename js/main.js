@@ -1,5 +1,6 @@
-// Show menu
+// NAVIGATION TOGGLE
 
+// Show navigation menu
 const navMenu = document.getElementById("nav-menu");
 const navToggle = document.getElementById("nav-toggle");
 const navClose = document.getElementById("nav-close");
@@ -10,8 +11,7 @@ if (navToggle) {
   });
 }
 
-// Hide Menu
-
+// Hide Navigation Menu
 if (navClose) {
   navClose.addEventListener("click", function () {
     navMenu.classList.remove("show");
@@ -19,9 +19,7 @@ if (navClose) {
 }
 
 // remvove menu when cicked
-
 const navLink = document.querySelectorAll(".nav__link");
-
 const linkAction = () => {
   const navMenu = document.getElementById("nav-menu");
   navMenu.classList.remove("show");
@@ -31,17 +29,9 @@ navLink.forEach((link) => {
   link.addEventListener("click", linkAction);
 });
 
-// change background header
+// END OF NAVIGATION TOGGLE
 
-// function scrollHeader() {
-//   const header = document.getElementById("header");
-//   console.log(header);
-//   // When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
-//   if (this.scrollY >= 50) header.classList.add("scroll");
-//   else header.classList.remove("scroll");
-// }
-// window.addEventListener("scroll", scrollHeader);
-
+// SCROLL HEADER
 const scrollHeader = () => {
   const nav = document.getElementById("header");
   // When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
@@ -51,8 +41,9 @@ const scrollHeader = () => {
 
 window.addEventListener("scroll", scrollHeader);
 
-// scroll up
+// END OF SCROLL HEADER
 
+// SCROLL UP
 function scrollUp() {
   const scrollUp = document.getElementById("scroll-up");
   // When the scroll is higher than 350 viewport height, add the show-scroll class to the a tag with the scroll-top class
@@ -61,8 +52,9 @@ function scrollUp() {
 }
 window.addEventListener("scroll", scrollUp);
 
-// scroll to section
+// END OF SCROLL UP
 
+// SCROLL TO PARTICULAR SECTION
 const sections = document.querySelectorAll("section[id]");
 
 function scrollActive() {
@@ -86,7 +78,9 @@ function scrollActive() {
 }
 window.addEventListener("scroll", scrollActive);
 
-// testimonial
+// END OF SCROLL TO PARTICULAR SECTION
+
+// TESTIMONIALS SWIPER
 
 let swiperTestimonial = new Swiper(".testimonial__container ", {
   loop: true,
@@ -105,6 +99,9 @@ let swiperTestimonial = new Swiper(".testimonial__container ", {
   },
 });
 
+// END OF TESTIMONIALS SWIPER
+
+// MAKE THE ABOUT PAGE BUTTON DYNAMIC
 const b = document.getElementById("toggle-btn");
 b.innerText = "See More";
 const displayText = () => {
@@ -118,8 +115,7 @@ const displayText = () => {
   }
 };
 
-// scroll reveal
-
+// SCROLL REVEAL
 const sr = ScrollReveal({
   origin: "top",
   distance: "60px",
@@ -141,17 +137,15 @@ sr.reveal(".testimonial__container", { origin: "left" });
 sr.reveal(".footer__content", { origin: "right" });
 sr.reveal(".footer__copy", { origin: "bottom" });
 
-// daerk and light theme
+// END OF SCROLL REVEAL
+
+// DARK AND LIGHT MODE
 
 const themeButton = document.getElementById("theme-button");
 const lighttheme = "light-theme";
-const iconTheme = "ri-twitter-fill";
+const iconTheme = "ri-sun-fill";
 
 themeButton.addEventListener("click", () => {
   document.body.classList.toggle(lighttheme);
   themeButton.classList.toggle(iconTheme);
 });
-
-{
-  /* <i class='bx ' ></i> */
-}
