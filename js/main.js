@@ -5,8 +5,6 @@ const navMenu = document.getElementById("nav-menu");
 const navToggle = document.getElementById("nav-toggle");
 const navClose = document.getElementById("nav-close");
 
-console.log(navMenu, navClose, navToggle);
-
 if (navToggle) {
   navToggle.addEventListener("click", function () {
     navMenu.classList.add("show");
@@ -32,6 +30,18 @@ navLink.forEach((link) => {
 });
 
 // END OF NAVIGATION TOGGLE
+
+// Dark anf Light Mode
+
+const themeButton = document.getElementById("theme-button");
+const lightTheme = "light-theme";
+const iconTheme = "ri-sun-fill";
+
+themeButton.addEventListener("click", () => {
+  document.body.classList.toggle(lightTheme);
+  themeButton.classList.toggle(iconTheme);
+});
+console.log(themeButton);
 
 // SCROLL HEADER
 const scrollHeader = () => {
@@ -142,12 +152,3 @@ sr.reveal(".footer__copy", { origin: "bottom" });
 // END OF SCROLL REVEAL
 
 // DARK AND LIGHT MODE
-
-const themeButton = document.getElementById("theme-button");
-const lighttheme = "light-theme";
-const iconTheme = "ri-sun-fill";
-
-themeButton.addEventListener("click", () => {
-  document.body.classList.toggle(lighttheme);
-  themeButton.classList.toggle(iconTheme);
-});

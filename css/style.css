@@ -40,26 +40,7 @@
 
 /* variables Dark Theme */
 
-body.light-theme {
-  --body-color: #fffdf5;
-  --text-color: #000000;
-  --sub-textcolor: #b55400;
-  --social-color: #000000;
-  --about-color: #fff;
-  --button-color: #000000;
-  --header-color: #fffdf5;
-  transition: all 1s;
-}
 /* Button Dark/Light */
-
-.change-theme {
-  position: absolute;
-  right: 4rem;
-  top: 9rem;
-  cursor: pointer;
-  font-size: 1.25rem;
-  color: var(--text-color);
-}
 
 /* Base */
 
@@ -71,6 +52,26 @@ body.light-theme {
 
 html {
   scroll-behavior: smooth;
+}
+
+body.light-theme {
+  --body-color: #fffdf5;
+  --text-color: #000000;
+  --sub-textcolor: #b55400;
+  --social-color: #000000;
+  --about-color: #fff;
+  --button-color: #000000;
+  --header-color: #fffdf5;
+  transition: all 1s;
+}
+
+.change-theme {
+  position: absolute;
+  right: 5rem;
+  top: 4.5rem;
+  cursor: pointer;
+  font-size: 1.25rem;
+  color: var(--text-color);
 }
 
 body {
@@ -184,12 +185,18 @@ img {
 .nav__toggle {
   display: inline-flex;
   color: var(--text-color);
+  cursor: pointer;
 }
 
-.nav-logo {
+.nav__logo {
   align-items: center;
   column-gap: 0.25rem;
   transition: 0.3s;
+}
+
+.nav__logo {
+  font-size: 1.25rem;
+  color: var(--sub-textcolor);
 }
 
 .nav__toggle {
@@ -214,17 +221,17 @@ img {
   display: flex;
   flex-direction: column;
   text-align: center;
-  row-gap: 3.5rem;
-  padding: 9rem;
+  row-gap: 3rem;
+  padding: 5rem;
+  position: relative;
 }
 .nav__link {
-  font-size: var(--normal-font-size);
+  font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   color: var(--text-color);
   text-decoration: none;
   transition: 0.3s;
-  font-size: 1rem;
 }
 
 .nav__link:hover {
@@ -585,11 +592,15 @@ img {
 
   .nav__list {
     flex-direction: row;
-    column-gap: 3rem;
+    column-gap: 1rem;
+    /* padding-top: 0; */
   }
 
-  .nav__link {
+  .nav__logo {
     font-size: 1rem;
+  }
+  .nav__link {
+    font-size: 0.7rem;
   }
 
   .nav__toggle,
@@ -610,6 +621,15 @@ img {
     width: 250px;
     height: 250px;
   }
+
+  .change-theme {
+    position: absolute;
+    right: 3rem;
+    top: 4.8rem;
+    cursor: pointer;
+    font-size: 1.25rem;
+    color: var(--text-color);
+  }
 }
 
 /* LARGE DEVICES */
@@ -617,6 +637,13 @@ img {
   .container {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .nav__logo {
+    font-size: 1.5rem;
+  }
+  .nav__link {
+    font-size: 1rem;
   }
 
   .home__container {
@@ -685,8 +712,8 @@ img {
   }
   .change-theme {
     position: absolute;
-    right: 20rem;
-    top: 1.8rem;
+    right: 3rem;
+    top: 4.8rem;
     cursor: pointer;
     font-size: 1.25rem;
     color: var(--text-color);
