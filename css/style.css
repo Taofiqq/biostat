@@ -713,6 +713,7 @@ img {
 
   .footer__copy {
     font-size: 1.1rem;
+    margin-top: 3rem;
   }
   .change-theme {
     position: absolute;
