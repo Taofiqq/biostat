@@ -194,10 +194,10 @@ img {
   transition: 0.3s;
 }
 
-.nav__logo {
+/* .nav__logo {
   font-size: 1.25rem;
   color: var(--sub-textcolor);
-}
+} */
 
 .nav__toggle {
   cursor: pointer;
@@ -593,12 +593,11 @@ img {
   .nav__list {
     flex-direction: row;
     column-gap: 1rem;
-    /* padding-top: 0; */
   }
 
-  .nav__logo {
+  /* .nav__logo {
     font-size: 1rem;
-  }
+  } */
   .nav__link {
     font-size: 0.7rem;
   }
@@ -639,11 +638,16 @@ img {
     margin-right: auto;
   }
 
-  .nav__logo {
-    font-size: 1.5rem;
+  .logo {
+    width: 70px;
   }
   .nav__link {
     font-size: 1rem;
+  }
+
+  .nav__list {
+    flex-direction: row;
+    column-gap: 2rem;
   }
 
   .home__container {
