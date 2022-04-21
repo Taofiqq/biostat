@@ -67,8 +67,8 @@ body.light-theme {
 
 .change-theme {
   position: absolute;
-  right: 5rem;
-  top: 4.5rem;
+  right: 6rem;
+  top: 4.95rem;
   cursor: pointer;
   font-size: 1.25rem;
   color: var(--text-color);
@@ -623,10 +623,10 @@ img {
 
   .change-theme {
     position: absolute;
-    right: 3rem;
-    top: 4.8rem;
+    right: 4rem;
+    top: 5.2rem;
     cursor: pointer;
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: var(--text-color);
   }
 }
@@ -717,8 +717,8 @@ img {
   }
   .change-theme {
     position: absolute;
-    right: 3rem;
-    top: 4.8rem;
+    right: 4rem;
+    top: 5rem;
     cursor: pointer;
     font-size: 1.25rem;
     color: var(--text-color);

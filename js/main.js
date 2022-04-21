@@ -35,7 +35,7 @@ navLink.forEach((link) => {
 
 const themeButton = document.getElementById("theme-button");
 const lightTheme = "light-theme";
-const iconTheme = "ri-sun-fill";
+const iconTheme = "bxs-moon";
 
 themeButton.addEventListener("click", () => {
   document.body.classList.toggle(lightTheme);
