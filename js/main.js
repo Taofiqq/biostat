@@ -147,7 +147,7 @@ sr.reveal(".services__content", { origin: "right" });
 sr.reveal(".section__subtitle", { origin: "right" });
 sr.reveal(".testimonial__container", { origin: "left" });
 sr.reveal(".footer__content", { origin: "right" });
-// sr.reveal(".footer__copy", { origin: "left" });
+sr.reveal(".about__card", { origin: "left" });
 
 // END OF SCROLL REVEAL
 
