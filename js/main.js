@@ -136,7 +136,7 @@ const sr = ScrollReveal({
   // reset: true
 });
 
-sr.reveal(".nav", { origin: "right" });
+// sr.reveal(".nav", { origin: "right" });
 sr.reveal(".home__title", { delay: 500 });
 sr.reveal(".home__subtitle", { delay: 700 });
 sr.reveal(".home__img", { delay: 800 });
