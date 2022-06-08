@@ -143,7 +143,7 @@ sr.reveal(".home__img", { delay: 800 });
 sr.reveal(".home__button", { delay: 1000, interval: 200, origin: "bottom" });
 sr.reveal(".about__group", { origin: "left", delay: 1500, interval: 300 });
 sr.reveal(".about__data", { origin: "right", delay: 2000, interval: 400 });
-sr.reveal(".section__title", { origin: "right" });
+sr.reveal(".section__title", { origin: "right", delay: 500 });
 sr.reveal(".services__content", { origin: "right" });
 sr.reveal(".section__subtitle", { origin: "right" });
 sr.reveal(".testimonial__container", { origin: "left" });
