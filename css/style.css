@@ -600,6 +600,10 @@ img {
     right: 5rem;
     bottom: 5rem;
   }
+  .blink {
+    animation: blinker 1.5s linear infinite;
+    color: tomato;
+  }
 }
 
 @media screen and (min-width: 767px) {
