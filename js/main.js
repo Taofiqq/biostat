@@ -115,15 +115,15 @@ let swiperTestimonial = new Swiper(".testimonial__container ", {
 
 // MAKE THE ABOUT PAGE BUTTON DYNAMIC
 const b = document.getElementById("toggle-btn");
-b.innerText = "See More";
+b.innerText = "Read More";
 const displayText = () => {
   const x = document.getElementById("hide");
   if (x.style.display === "none") {
     x.style.display = "block";
-    b.innerText = "See Less";
+    b.innerText = "Read Less";
   } else {
     x.style.display = "none";
-    b.innerText = "See More";
+    b.innerText = "Read More";
   }
 };
 
