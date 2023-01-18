@@ -352,8 +352,24 @@ img {
   text-align: center;
   border-radius: 1.25rem;
 }
+.home__card {
+  width: 180px;
+  position: absolute;
+  right: 0;
+  bottom: -2.5rem;
+  /* background-color: hsla(0, 0%, 100%, 0.1); */
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(16px);
+  padding: 1rem 0.75rem;
+  text-align: center;
+  border-radius: 1.25rem;
+}
 
 .about__card-title {
+  font-size: 0.9rem;
+  color: var(--about-color);
+}
+.home__card-title {
   font-size: 0.9rem;
   color: var(--about-color);
 }
@@ -573,6 +589,12 @@ img {
     right: -0.5rem;
     bottom: 5rem;
   }
+  .home__card {
+    position: absolute;
+    width: 170px;
+    right: -0.5rem;
+    bottom: 5rem;
+  }
 
   .about__description {
     font-size: 0.9rem;
@@ -595,6 +617,12 @@ img {
   }
 
   .about__card {
+    position: absolute;
+    width: 170px;
+    right: 5rem;
+    bottom: 5rem;
+  }
+  .home__card {
     position: absolute;
     width: 170px;
     right: 5rem;
@@ -638,6 +666,13 @@ img {
   }
 
   .about__card {
+    position: absolute;
+    width: 170px;
+    right: 14rem;
+    bottom: 5rem;
+  }
+
+  .home__card {
     position: absolute;
     width: 170px;
     right: 14rem;
@@ -712,6 +747,12 @@ img {
     padding: 1rem 1.25rem;
     right: -4rem;
     bottom: -1rem;
+  }
+  .home__card {
+    width: 198px;
+    padding: 1rem 1.25rem;
+    right: 15rem;
+    bottom: 4rem;
   }
 
   .about__description {
