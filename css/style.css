@@ -710,8 +710,8 @@ img {
   .about__card {
     width: 198px;
     padding: 1rem 1.25rem;
-    right: 14rem;
-    bottom: 5rem;
+    right: -4rem;
+    bottom: -1rem;
   }
 
   .about__description {
