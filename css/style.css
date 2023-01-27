@@ -160,6 +160,10 @@ img {
   width: 50px;
 }
 
+.free__trial {
+  color: var(--sub-textcolor);
+  font-size: 0.9rem;
+}
 /* Header navigation */
 .header {
   width: 100%;
