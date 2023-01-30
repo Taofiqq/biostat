@@ -162,7 +162,8 @@ img {
 
 .free__trial {
   color: var(--sub-textcolor);
-  font-size: 0.9rem;
+  font-size: var(--h2-font-size);
+  margin-bottom: 0.25rem;
 }
 /* Header navigation */
 .header {
