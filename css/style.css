@@ -733,6 +733,9 @@ img {
   .home__subtitle {
     font-size: 1.1rem;
   }
+  .free__trial {
+    font-size: 1.1rem;
+  }
   .home__img {
     width: 380px;
     margin-top: -1rem;
