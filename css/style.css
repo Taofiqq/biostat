@@ -8,21 +8,21 @@
   /* colors */
 
   /* light */
-  /* --body-color: #071c21;
+  --body-color: #071c21;
   --text-color: white;
   --sub-textcolor: #ecdbba;
   --social-color: #fff;
   --about-color: #fff;
   --button-color: #fff;
-  --header-color: #071c21; */
+  --header-color: #071c21;
 
-  --body-color: #fffdf5;
+  /* --body-color: #fffdf5;
   --text-color: #000000;
   --sub-textcolor: #b55400;
   --social-color: #000000;
   --about-color: #fff;
   --button-color: #000000;
-  --header-color: #fffdf5;
+  --header-color: #fffdf5; */
 
   /* fonts and typography */
   --body-font: "Work Sans", cursive;
@@ -59,21 +59,21 @@ html {
 
 /* variables Dark Theme */
 body.light-theme {
-  /* --body-color: #fffdf5;
+  --body-color: #fffdf5;
   --text-color: #000000;
   --sub-textcolor: #b55400;
   --social-color: #000000;
   --about-color: #fff;
   --button-color: #000000;
-  --header-color: #fffdf5; */
+  --header-color: #fffdf5;
 
-  --body-color: #071c21;
+  /* --body-color: #071c21;
   --text-color: white;
   --sub-textcolor: #ecdbba;
   --social-color: #fff;
   --about-color: #fff;
   --button-color: #fff;
-  --header-color: #071c21;
+  --header-color: #071c21; */
   transition: all 1s;
 }
 
@@ -303,8 +303,8 @@ img {
 .home__button {
   position: relative;
   border: 2px solid #ecdbba;
-  width: 90px;
-  height: 90px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -317,8 +317,8 @@ img {
 .home__button::before {
   content: "";
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   border: 1px solid #ecdbba;
   border-radius: 50%;
   box-shadow: 0 0 12px #ecdbba;
